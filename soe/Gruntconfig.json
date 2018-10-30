@@ -2,7 +2,7 @@
   "srcPaths": {
     "make": "src/engineering.make"
   },
-  "domain": "jse.localacebuild",
+  "domain": "soe-ace.sws",
   "buildPaths": {
     "packages": "build/packages"
   },
@@ -24,7 +24,7 @@
     "make": {
       "args": ["--force-complete"]
     },
-    "alias": "jse.localacebuild"
+    "alias": "soe-ace.sws"
   },
   "scripts": {
     "settings": "cp src/sites/default/*.php build/html/sites/default/",
