@@ -287,3 +287,9 @@ projects[rubik][version] = "4.4"
 projects[rubik][type] = "theme"
 projects[tao][version] = "3.1"
 projects[tao][type] = "theme"
+
+; Only for use on CD sandboxes. do not move to other environments
+; ------------------------------------------------------------------------------
+
+projects[stage_file_proxy][subdir] = "contrib"
+projects[stage_file_proxy][version] = "1.8"
