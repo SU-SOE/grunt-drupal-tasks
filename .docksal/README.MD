@@ -4,7 +4,7 @@
 
 1. clone repo -- will default SOE-develop-mc branch.
 2. Checkout branch, e.g., `git checkout -b SOE-jiraticket-shortdescription`
-3. Edit the following files, which are located ./dp
+3. Edit the following files, which are located ./docksal
     3. Add branch name to line six in Gruntfile.js.
     4. Edit soe.aliases.drushrc.php, making sure the slugs path to build/html is correct.
     5. Edit settings.local.php, updating the `base_url` var. 
