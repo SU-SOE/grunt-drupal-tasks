@@ -42,7 +42,7 @@ composer install
 sleep 5
 grunt
 grunt settings
-fin init-site
+bash /var/www/.docksal/commands/init-site
 grunt syncfiles
 grunt syncdb
 grunt update
@@ -50,5 +50,3 @@ grunt reset
 grunt localadmin
 echo
 echo "Installation completed."
-echo
-fin config | grep -i "VIRTUAL_HOST:"
