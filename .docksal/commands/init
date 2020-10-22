@@ -12,8 +12,6 @@ fin project start
 echo
 echo "In order for Grunt to scaffold the site correctly, you first need to edit Gruntconfig.json, Gruntfile.js and settings.local.php, both located in src_files dir. "
 echo
-echo "Also please take a moment to delete the Grunconfig.json and Gruntfile.js, both located in /soe/."
-echo
 read -p "Are you sure you want to continue? " -n 1 -r
 echo
 if [[ ! $REPLY =~ ^[Yy]$ ]]

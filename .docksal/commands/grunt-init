@@ -18,6 +18,7 @@ sudo chown -R "$(whoami)" /usr/local/bin /usr/local/lib /usr/local/include /usr/
 
 
 #Installations
+#bash /var/www/.docksal/commands/init-site
 npm install -g n
 n 10.22.1
 npm install -g grunt-cli
@@ -39,14 +40,12 @@ sleep 5
 n exec 10.22.1 npm install grunt
 sleep 5
 composer install
-sleep 5
 grunt
 grunt settings
-bash /var/www/.docksal/commands/init-site
-grunt syncfiles
 grunt syncdb
 grunt update
 grunt reset
 grunt localadmin
+grunt syncfiles
 echo
 echo "Installation completed."
