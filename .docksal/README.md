@@ -3,13 +3,14 @@
 ##Steps to setup
 
 1. clone repo -- will default SOE-develop-mc branch.
-2. Checkout branch, e.g., `git checkout -b SOE-jiraticket-shortdescription`
+2. Checkout new branch, e.g., `git checkout -b SOE-jiraticket-shortdescription`
 3. Edit the following files, which are located ./docksal
-    3. Add branch name to line six in Gruntfile.js.
-    4. Edit soe.aliases.drushrc.php, making sure the slugs path to build/html is correct.
-    5. Edit settings.local.php, updating the `base_url` var. 
-6. Run `fin init`
-    
+    1. Add branch name to line six in Gruntfile.js.
+    2. Edit soe.aliases.drushrc.php, making sure the slugs path to build/html is correct.
+    3. Optional: edit settings.local.php, updating the `base_url` var. Note that the `base_url` is set based on the directory name of this repository, e.g., `grunt-drupal-tasks.docksal`.
+4. If you use a key other than `id_rsa` to connect to Acquia, run `fin ssh-key add <keyname>` (e.g., `fin ssh-key add id_rsa_acquia_4096`)
+5. Run `fin init`
+
 
 Building Notes:
 `npm install` failed. Trying to downgrade. Downgrading success. Using node -v 10.22.x
@@ -43,6 +44,6 @@ https://www.drupal.org/node/1401522
 
 #####Running commands with older node version
 `fin exec n exec 10.16.0 npm install`
-  
+
 #####Finding drush
 `fin exec whereis drush`

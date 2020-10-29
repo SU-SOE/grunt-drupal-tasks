@@ -639,7 +639,7 @@ $databases['default']['default'] = array (
   'charset' => 'utf8mb4',
   'collation' => 'utf8mb4_general_ci'
 );
-$base_url = "http://soe.docksal";
+$base_url = "https://grunt-drupal-tasks.docksal";
 # File system settings.
 $conf['file_temporary_path'] = '/tmp';
 # Workaround for permission issues with NFS shares

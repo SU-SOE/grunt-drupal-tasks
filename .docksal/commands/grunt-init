@@ -24,12 +24,12 @@ n 10.22.1
 npm install -g grunt-cli
 
 # Copying install files.
-cp "$PROJECT_ROOT/.docksal/src_files/Gruntconfig.json" "$PROJECT_ROOT/soe"
-cp "$PROJECT_ROOT/.docksal/src_files/Gruntfile.js" "$PROJECT_ROOT/soe"
-cp "$PROJECT_ROOT/.docksal/src_files/settings.local.php" "$PROJECT_ROOT/soe/src/sites/default"
-cp "$PROJECT_ROOT/.docksal/src_files/Acquia_settings/.drush/"* "$HOME/.drush"
-cp "$PROJECT_ROOT/.docksal/src_files/soe.aliases.drushrc.php"* "$HOME/.drush"
-cp -r "$PROJECT_ROOT/.docksal/src_files/Acquia_settings/.acquia" "$HOME"
+rsync -az "$PROJECT_ROOT/.docksal/src_files/Gruntconfig.json" "$PROJECT_ROOT/soe"
+rsync -az "$PROJECT_ROOT/.docksal/src_files/Gruntfile.js" "$PROJECT_ROOT/soe"
+rsync -az "$PROJECT_ROOT/.docksal/src_files/settings.local.php" "$PROJECT_ROOT/soe/src/sites/default"
+rsync -az "$PROJECT_ROOT/.docksal/src_files/Acquia_settings/.drush/"* "$HOME/.drush"
+rsync -az "$PROJECT_ROOT/.docksal/src_files/soe.aliases.drushrc.php"* "$HOME/.drush"
+rsync -az -r "$PROJECT_ROOT/.docksal/src_files/Acquia_settings/.acquia" "$HOME"
 
 #Running install commands
 n exec 10.22.1 npm install
