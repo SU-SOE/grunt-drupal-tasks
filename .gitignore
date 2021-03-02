@@ -19,3 +19,5 @@ soe/test/behat.local.yml
 # Docksal local environment file
 .docksal/docksal-local.env
 soe/test/behat.local.yml
+
+.docksal/local.docksal.env
